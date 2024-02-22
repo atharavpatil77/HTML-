@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title> Loan Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:black;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-image: linear-gradient(180deg, #f34d4d 0%, #f053e8 46%, #f69f36 100%);
+      animation: background-image 10s ease infinite;
+      border-radius: 8px;
+      box-shadow: 0 0 90px palevioletred;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    label {
+      font-weight: bold;
+      font-family:'Times New Roman', Times, serif;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background: url('https://i.pinimg.com/originals/03/13/7d/03137dde3c4be7547fb42209009cbf66.gif') center center/cover;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <p align="center" style="font-size: xx-large ;"> Loan Application  Form</p>
+  <hr><form action="submit.php" method="POST">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="eg. Atharav">
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="eg. Patil">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"  placeholder="eg.xyz@gmail.com">
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" cols="50"></textarea>
+    </div>
+    <div>
+      <label for="AGE">AGE:</label>
+      <input type="number" min="1" max="100" id="Age" name="Age">
+    </div>
+    <div>
+        <h3>Gender: </h3>
+            <input type="radio" name="gender" value="Male"  checked>Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Other">Other
+
+    </div>
+    <div>
+      <h4>Marital Status: </h4>
+            <input type="radio" name="Martial Status" value="Single " checked>Single<br>
+            <input type="radio" name="Martial Status" value="Female">Married<br>
+            <input type="radio" name="Martial Status" value="Other">Other
+
+
+    </div>
+    <br>
+    <div>
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate">
+    </div>
+    <br>
+    <div>
+      <label for="Currently">Profession:</label>
+      <select id="Roles" name="roles">
+        <option value="Student">Student</option>
+        <option value="Working">Working</option>
+        <option value="Freelancing">Freelancing</option>
+        <option value="Entreprenuer">Entreprenuer</option>
+        <option value="Others">Other</option>
+      </select>
+    </div>
+    <div> 
+      <label for="Select Your City">City:<select name="city" size="3"></label>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Mumbai">Kolhapur</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+    </select><br>
+    </div>
+    <br>
+
+    <div>
+      <label for="Reason For Loan ">Reason For Loan :</label>
+      <select id="Reasons" name="Reasons">
+        <option value="Education Loan">Education Loan</option>
+        <option value="Personal Loan ">Personal Loan</option>
+        <option value="Car Loan ">Car Loan</option>
+        <option value="Business Loan">Business Loan</option>
+        <option value="Others">Other</option>
+      </select>
+    </div>
+    
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
